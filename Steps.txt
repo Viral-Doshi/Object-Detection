@@ -1,0 +1,10 @@
+1.  cd C:\Darknet\darknet-master\build\darknet\x64
+2.  darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights  --> Images
+    darknet.exe detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights horses.mp4  --> Videos
+    darknet.exe detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights -c 0 --> WebCam
+
+
+Training:
+
+1.  cd C:\Darknet\darknet-master\build\darknet\x64
+2.  darknet.exe detector train data/obj.data cfg/yolov4-obj.cfg backup/yolov4-obj_step3.weights
